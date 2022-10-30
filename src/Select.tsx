@@ -1,22 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import styles from "../styles/select.module.css"
-
-export type SelectOption = {
-  label: string
-  value: string | number
-}
-
-interface MultipleSelectProps {
-  multiple: true
-  value: SelectOption[]
-  onChange: (value: SelectOption[]) => void
-}
-
-interface SingleSelectProps {
-  multiple?: false
-  value?: SelectOption
-  onChange: (value?: SelectOption) => void
-}
+import { MultipleSelectProps, SelectOption, SingleSelectProps } from "./types/selectTypes"
 
 type SelectProps = {
   options: SelectOption[]
