@@ -7,9 +7,9 @@
   align-items: center;
   gap: 0.5em;
   padding: 0.5em;
-  border-radius: 0.5em;
   border-radius: 0.25em;
   outline: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .container:focus {
@@ -51,6 +51,7 @@
 }
 
 .options {
+  position: absolute;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -62,7 +63,7 @@
   width: 100%;
   left: 0;
   top: calc(100% + 0.25em);
-  background-color: #fff;
+  background-color: white;
   z-index: 100;
 }
 
@@ -81,7 +82,7 @@
 
 .option.highlighted {
   background-color: hsl(200, 100%, 50%);
-  color: #fff;
+  color: white;
 }
 
 .option-badge {
@@ -107,7 +108,7 @@
   color: hsl(0, 100%, 50%);
 }
 
-.option-badge:hover > .remove-btn {
+.option-badge > .remove-btn {
   font-size: 1.25em;
   color: #777;
 }

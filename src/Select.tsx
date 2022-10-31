@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import styles from "../styles/select.module.css"
+import styles from "./select.module.css"
 import { MultipleSelectProps, SelectOption, SingleSelectProps } from "./types/selectTypes"
 
 type SelectProps = {
